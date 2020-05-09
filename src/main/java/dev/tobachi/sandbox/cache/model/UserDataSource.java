@@ -3,8 +3,6 @@ package dev.tobachi.sandbox.cache.model;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import dev.tobachi.sandbox.cache.model.DataSourceException;
-import dev.tobachi.sandbox.cache.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.core.io.ClassPathResource;

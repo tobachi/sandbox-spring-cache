@@ -24,4 +24,5 @@ public class UserRestController {
         List<User> userList = userService.getAll();
         return userList;
     }
+
 }

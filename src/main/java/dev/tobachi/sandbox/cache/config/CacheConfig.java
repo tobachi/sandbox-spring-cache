@@ -23,8 +23,8 @@ public class CacheConfig extends CachingConfigurerSupport {
         connectionFactory.afterPropertiesSet();
 
         GenericJackson2JsonRedisSerializer serializer = new GenericJackson2JsonRedisSerializer();
-        RedisCacheConfiguration cacheConfiguration =
-                RedisCacheConfiguration.defaultCacheConfig()
+        RedisCacheConfiguration cacheConfiguration = RedisCacheConfiguration
+                .defaultCacheConfig()
                 .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(serializer))
                 .entryTtl(Duration.ofSeconds(10));
 
@@ -33,12 +33,5 @@ public class CacheConfig extends CachingConfigurerSupport {
                 .cacheDefaults(cacheConfiguration)
                 .build();
     }
-
-//    @Bean
-//    public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory cf) {
-//        RedisTemplate<String, String> redisTemplate = new RedisTemplate<String, String>();
-//        redisTemplate.setConnectionFactory(cf);
-//        return redisTemplate;
-//    }
 
 }
