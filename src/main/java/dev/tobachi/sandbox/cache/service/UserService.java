@@ -1,6 +1,6 @@
 package dev.tobachi.sandbox.cache.service;
 
-import dev.tobachi.sandbox.cache.infrastructure.UserDataSource;
+import dev.tobachi.sandbox.cache.model.UserDataSource;
 import dev.tobachi.sandbox.cache.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

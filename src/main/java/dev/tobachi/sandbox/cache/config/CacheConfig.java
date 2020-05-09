@@ -1,4 +1,4 @@
-package dev.tobachi.sandbox.cache.infrastructure;
+package dev.tobachi.sandbox.cache.config;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;

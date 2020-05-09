@@ -1,4 +1,4 @@
-package dev.tobachi.sandbox.cache.infrastructure;
+package dev.tobachi.sandbox.cache.model;
 
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
